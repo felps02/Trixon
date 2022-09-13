@@ -1,0 +1,22 @@
+body,html
+{
+    width: max-content;
+    background-color: rgba(244, 184, 94, 1);
+}
+
+.rodape
+{
+    align-items: center;
+}
+
+h1
+{
+    text-align: center;
+    width:max-content;
+}
+p
+{
+
+    text-align: center;
+    width: max-content;
+}
