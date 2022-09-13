@@ -1,15 +1,27 @@
 body,html
 {
-    width: max-content;
+    width: 100%;
     background-color: rgba(244, 184, 94, 1);
    
 }
 
+#logo
+{
+    margin-top: 0px;
+    margin-left: 0px;
+}
 .rodape
 {
+    height: 100px;
+    display: flex;
     align-items: center;
 }
-
+.textos
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 h1
 {
     text-align: center;
@@ -27,6 +39,7 @@ p
     color: rgba(43, 95, 186, 1);
     font-family: 'Jomhuria';
     font-style: normal;
+    font-size: 30px;
 }
 a
 {
@@ -59,11 +72,12 @@ a
     color: rgba(244, 184, 94, 1);
     font-family: 'Jomhuria';
     font: bold;
+    font-size: 16
 
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(43, 95, 186, 1);
     opacity: 1; /* Firefox */
-    font-size: 14px;
+    font-size: 20px;
   }
