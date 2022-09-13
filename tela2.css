@@ -1,0 +1,23 @@
+body,html
+{
+  
+    background-color: rgba(244, 184, 94, 1);
+    display:flex;
+    flex-direction:column;  
+}
+.cabeça
+{
+    width: 100%;
+    height:20%;
+    background-color:#3160B1;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+}
+.ca
+{
+display: flex;
+flex-direction:row;
+margin-left: 10%;
+
+}
