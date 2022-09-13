@@ -2,6 +2,7 @@ body,html
 {
     width: max-content;
     background-color: rgba(244, 184, 94, 1);
+   
 }
 
 .rodape
@@ -13,10 +14,56 @@ h1
 {
     text-align: center;
     width:max-content;
+    color: rgba(43, 95, 186, 1);
+    font-family: 'Jomhuria';
+    font-style: normal;
+    font-size: 60px;
 }
 p
 {
 
     text-align: center;
     width: max-content;
+    color: rgba(43, 95, 186, 1);
+    font-family: 'Jomhuria';
+    font-style: normal;
 }
+a
+{
+    text-decoration: none;
+    color: rgba(43, 95, 186, 1);
+    font-family: 'Jomhuria';
+    font-style: normal;
+    
+}
+.usuario
+{
+    background-color: rgba(244, 184, 94, 1);
+    font-family: 'Jomhuria';
+    font: bold;
+    border-radius: 10px;
+    border-color: rgba(43, 95, 186, 1);
+}
+.senha
+{
+    background-color: rgba(244, 184, 94, 1);
+    border-radius: 10px;
+    border-color: rgba(43, 95, 186, 1);
+    font-family: 'Jomhuria';
+    font: bold;
+}
+.login
+{
+    border-radius: 10px;
+    background-color: rgba(43, 95, 186, 1);
+    color: rgba(244, 184, 94, 1);
+    font-family: 'Jomhuria';
+    font: bold;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(43, 95, 186, 1);
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+  }
