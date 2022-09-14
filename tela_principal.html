@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="tela_principal.css">
     <title>Document</title>
 </head>
-<body> <div class="rodape">
+<body>  
+    <div class="cabecalho">
     <img src="img/im_logo_azu.png" width="170px" id="logo">
+    
+    <div class="rodape">
+        <div class="espacos_rodape">
     <input type="text" placeholder="Usuário" class="usuario">
     <input type="password" placeholder="Senha" class="senha">
     <input type="button" value="Login" class="login">
     <a href="tela_cadastro.html">Não possui uma conta?</a>
+        </div>
+    </div>
+    
+    </div>
+<div class="imagens">
+<img src="img/im1_tela_principal.png" width="200px" id="im_1">
+<img src="img/im2_tela_principal.png" width="200px" id="im_1">
+<img src="img/im3_tela_principal.png" width="200px" id="im_1">
 </div>
+<div class="texto_e_fotos">
 <div class="textos">
     <h1> O que somos?</h1>
     <p>Seja bem-vindo a Pampita decorações</p>
@@ -23,9 +37,22 @@
         melhor qualidade de atendimento e <br>
         experiência para você e para a sua festa.</p>
 </div>
-        <img src="img/im1_tela_principal.png" width="170px" id="im_1">
-        <img src="img/im2_tela_principal.png" width="170px" id="im_1">
-        <img src="img/im3_tela_principal.png" width="170px" id="im_1">
+<div class="fotos">
+<img src="img/im1_tela_principal.png" width="200px" id="im_1">
+<img src="img/im2_tela_principal.png" width="200px" id="im_1">
+</div>
+</div>
 
+<script>
+   
+    $('.fotos').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+});
+</script>
+    
 </body>
 </html>
