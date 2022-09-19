@@ -1,3 +1,4 @@
+* { margin: 0; padding: 0; }
 body,html
 {
     width: 100%;
@@ -114,10 +115,7 @@ a
     flex-direction: row;
     align-items: center;
 }
-.fotos
-{
-    padding: 20%;
-}
+
 .texto_im1
 {
     display: flex;

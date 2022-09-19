@@ -1,0 +1,8 @@
+* { margin: 0; padding: 0; }
+
+::placeholder
+{
+    color: rgba(43, 95, 186, 1);
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+}
