@@ -1,0 +1,43 @@
+* { margin: 0; padding: 0; }
+body,html
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: justify;
+    width: max-content;
+    align-items: center;
+    width: 100%;
+}
+.texto
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: justify;
+    width: max-content;
+    align-items: center;
+}
+
+p1
+{
+    font-size: 10px;
+}
+
+.texto_di
+{
+    width: 100%;
+    text-align: right;
+   
+}
+
+.prosseguir
+{
+    width: 100%;
+}
+
+#botao_prosseguir
+{   
+    font-size: 12px;
+    text-align: right;
+}
