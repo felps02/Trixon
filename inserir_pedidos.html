@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="inserir_pedidos.css">
+</head>
+
+<body>
+    <div class="cima">
+        <a href="tela_admin.html"><img src="img/im_voltar.png" width="40px" id="voltar"></a>
+    </div>
+    <div class="tudo">
+        <div class="logo">
+            <img src="img/im_logo_azu.png" width="250px">
+        </div>
+        <div class="img_inserir_produto">
+            <img id="imagem" src="img/im_inserir.png" width="100px;">
+            <button id="botao_inserir" style="display:block;width:max-content;"
+                onclick="document.getElementById('getFile').click()">Insira a Imagem do Produto</button>
+            <input type='file' id="getFile" style="display:none">
+        </div>
+
+        <br><br>
+
+        <input type="text" maxlength="250" size="50" placeholder="Nome do Produto" id="nome_produto">
+        <br><br>
+
+        <input type="text" maxlength="250" size="50" placeholder="Preço do Produto" id="preco">
+        <br><br>
+
+        <select id="selecionar_tema">
+            <option value="" disabled selected>Selecione o Tema do Produto</option>
+            <option value="disney">Disney</option>
+        </select>
+        <br><br>
+
+        <input type="text" maxlength="250" size="50" placeholder="Descrição do Produto" id="desc">
+        <br><br>
+
+        <input type="button" value="Registrar o Produto" id="registrar_produto">
+    </div>
+</body>
+
+<script src="jquery-3.6.1.min.js"></script>
+
+<script>
+    $(document).on("change", "#meu_upload", function (e) {
+        showThumbnail(this.files);
+    });
+
+    function showThumbnail(files) {
+        if (files && files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                imagem.src = e.target.result;
+            }
+
+            reader.readAsDataURL(files[0]);
+        }
+    }
+</script>
+
+</html>
