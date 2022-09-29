@@ -6,7 +6,6 @@
     $usuario = $_POST["usuario"];
     $senha = $_POST["senha"];
     $data1 = $_POST["data1"];
-    echo ($data1);
     $cpf = $_POST["cpf"];
     $telefone = $_POST["telefone"];
     
@@ -21,4 +20,4 @@
     $comando->execute();
 
     echo("Você foi registrado");
-?>
+?> 
