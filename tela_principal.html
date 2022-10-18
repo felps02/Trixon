@@ -17,9 +17,11 @@
 
         <div class="rodape">
             <div class="espacos_rodape">
-                <input type="text" placeholder="Usuário" class="usuario">
-                <input type="password" placeholder="Senha" class="senha">
-                <input type="button" value="Login" class="login">
+                <form action="login.php" method="POST">
+                <input type="text" placeholder="Usuário" class="usuario" name="usuario">
+                <input type="password" placeholder="Senha" class="senha" name="senha">
+                <input type="submit" value="Login" class="login">
+                </form>
                 <a href="tela_cadastro.html">Não possui uma conta?</a>
             </div>
         </div>

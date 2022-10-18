@@ -19,5 +19,5 @@
     $comando->bindValue(":telefone", $telefone);
     $comando->execute();
 
-    echo("Você foi registrado");
+    header('Location: tela_principal.html');
 ?> 

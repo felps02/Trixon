@@ -15,14 +15,13 @@
         <div class="logo">
             <img src="img/im_logo_azu.png" width="250px">
         </div>
-        <form action="cadastro_produto.php">
-        <!--<div class="img_inserir_produto">
+        <form action="cadastro_produto.php" method="POST" enctype="multipart/form-data">
+        <div class="img_inserir_produto">
                 <img id="imagem" src="img/im_inserir.png" width="100px;">
-                <button id="botao_inserir" style="display:block;width:max-content;"
-                    onclick="document.getElementById('getFile').click()">Insira a Imagem do Produto</button>
-                <input type='file' id="getFile" style="display:none">
+                <input type="file" name="imagem" id="foto" hidden multiple accept="image/*">
+                <label for="foto">Escolha a foto</label>
             </div>
-        -->
+
         
 
             <br><br>
@@ -45,23 +44,4 @@
 </body>
 
 <script src="jquery-3.6.1.min.js"></script>
-
-<script>
-    $(document).on("change", "#meu_upload", function (e) {
-        showThumbnail(this.files);
-    });
-
-    function showThumbnail(files) {
-        if (files && files[0]) {
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-                imagem.src = e.target.result;
-            }
-
-            reader.readAsDataURL(files[0]);
-        }
-    }
-</script>
-
 </html>
