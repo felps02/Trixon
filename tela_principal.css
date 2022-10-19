@@ -25,14 +25,6 @@ body,html
     flex-direction: row;
     justify-content: space-around;
 }
-.textos
-{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    width: max-content;
-}
 h1
 {
     text-align: center;
@@ -88,12 +80,17 @@ a
     font-size: 16px;
 
 }
-.imagens
+.imagens-textos
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 5%;
+}
+.paragrafo
+{
+   text-align: justify;
+   width: 30vh;
 }
 .cabecalho
 {
@@ -108,15 +105,9 @@ a
     border-color: gray;
  
 }
-.texto_e_fotos
-{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-.texto_im1
+
+.texto_im
 {
     display: flex;
     flex-direction: column;
@@ -127,28 +118,7 @@ a
     font-size: 36px;
 
 }
-.texto_im2
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Jomhuria';
-    font: bold;
-    color: rgba(43, 95, 186, 1);;
-    font-size: 36px;
 
-}
-.texto_im3
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Jomhuria';
-    font: bold;
-    color: rgba(43, 95, 186, 1);;
-    font-size: 36px;
-
-}
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(43, 95, 186, 1);
     opacity: 1; /* Firefox */
