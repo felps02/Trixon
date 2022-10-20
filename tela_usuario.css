@@ -77,57 +77,7 @@ a {
     color: rgba(43, 95, 186, 1);
 }
 
-#cpf
-{
-    padding: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
-    background-color: rgba(244, 184, 94, 1);
-    border-color: rgba(43, 95, 186, 1);
-}
-
-#endereco
-{
-    padding: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
-    background-color: rgba(244, 184, 94, 1);
-    border-color: rgba(43, 95, 186, 1);   
-}
-
-#email
-{
-    padding: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
-    background-color: rgba(244, 184, 94, 1);
-    border-color: rgba(43, 95, 186, 1);
-}
-
-#senha
-{
-    padding: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
-    background-color: rgba(244, 184, 94, 1);
-    border-color: rgba(43, 95, 186, 1);
-}
-
-#telefone
-{
-    padding: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
-    background-color: rgba(244, 184, 94, 1);
-    border-color: rgba(43, 95, 186, 1);
-}
-
-#cartao
+.estilo-info
 {
     padding: 5px;
     border-style: solid;

@@ -6,7 +6,7 @@
     $set_senha = $_POST["senha"];
 
     //comando sql.
-    $comando = $pdo->prepare("SELECT cpf, senha FROM cadastro_usuario WHERE usuario = :usuario");
+    $comando = $pdo->prepare("SELECT cpf, nome, email, usuario, senha, telefone, data1 FROM cadastro_usuario WHERE usuario = :usuario");
 
     //insere valores das variaveis no comando sql.
     $comando->bindValue(":usuario", $usuario);
@@ -27,10 +27,14 @@
             //insere informações na sessão.
             $_SESSION['cpf'] = $resultado['cpf'];
             $_SESSION['senha'] = $resultado['senha'];
+            $_SESSION['nome'] = $resultado['nome'];
+            $_SESSION['email'] = $resultado['email'];
+            $_SESSION['telefone'] = $resultado['telefone'];
+            $_SESSION['data1'] = $resultado['data1'];
             $_SESSION['loggedin'] = true;
 
             //redireciona para a pagina informada.
-            header("Location:tela2.html");
+            header("Location:informacao-usuario.php");
         } else {
             echo ("Email ou Senha Inválida!");
         }
