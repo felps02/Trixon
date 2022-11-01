@@ -34,7 +34,7 @@
             $_SESSION['loggedin'] = true;
 
             //redireciona para a pagina informada.
-            header("Location:informacao-usuario.php");
+            header("Location:tela2.html");
         } else {
             echo ("Email ou Senha Inválida!");
         }

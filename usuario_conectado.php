@@ -2,7 +2,7 @@
     include("conecta.php");
 
     //comando sql.
-    $comando = $pdo->prepare("SELECT cpf, nome, email, telefone, data1 FROM cadastro_usuario WHERE cpf=:cpf;");
+    $comando = $pdo->prepare("SELECT cpf, nome, email, telefone, data1, senha FROM cadastro_usuario WHERE cpf=:cpf;");
     
     //insere valores das variaveis no comando sql.
     $comando->bindValue(":cpf", $_SESSION['cpf']);

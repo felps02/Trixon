@@ -20,8 +20,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 <body>
     <?php
-        include("listar_usuario_conectado.php");
-        echo "<p>Bem vindo ".$informacoes_usuario['nome_usuario']."!</p>";
+        include("usuario_conectado.php");
+        echo "<p>Bem vindo ".$informacoes_usuario['nome']."!</p>";
     ?>
     <div class="voltar">
         <a href="tela2.html"><img src="img/im_voltar.png"></div></a> 
@@ -38,20 +38,18 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
         </div>
 
-        <input type="text" maxlength="50" size="50" placeholder="Usuário" id="cpf" class="estilo-info">
+        <input type="text" maxlength="50" size="50" placeholder="<?php echo $informacoes_usuario['cpf'];?>" id="cpf" class="estilo-info">
         <br><br>
 
-        <input type="text" maxlength="250" size="50" placeholder="Fulano@naoseioq.com" id="email"class="estilo-info">
+        <input type="text" maxlength="250" size="50" placeholder="<?php echo $informacoes_usuario['email'];?>" id="email"class="estilo-info">
         <br><br>
 
-        <input type="text" maxlength="250" size="50" placeholder="Alterar senha" id="senha"class="estilo-info">
+        <input type="text" maxlength="250" size="50" placeholder="<?php echo $informacoes_usuario['senha'];?>" id="senha"class="estilo-info">
         <br><br>
 
-        <input type="text" maxlength="250" size="50" placeholder="Número de telefone" id="telefone"class="estilo-info">
+        <input type="text" maxlength="250" size="50" placeholder="<?php echo $informacoes_usuario['telefone'];?>" id="telefone"class="estilo-info">
         <br><br>
 
-        <input type="text" maxlength="250" size="50" placeholder="Cartao" id="cartao"class="estilo-info">
-        <br><br>
     </div>
 </body>
 

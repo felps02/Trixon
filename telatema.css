@@ -32,7 +32,6 @@ body,html
     font-size: 200%;
     margin-left: 0%;
     align-items: center;
-    color:#F4B85E;
   
 }
 .coluna
@@ -91,4 +90,12 @@ th{
 }
 a{
     text-decoration: none;
+    color: #F4B85E;
+}
+a:hover
+{
+    color: white;
+}
+u{
+    color: #F4B85E;
 }
