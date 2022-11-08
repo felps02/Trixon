@@ -1,4 +1,5 @@
 <?php
+include("listar_usuarios.php");
 session_start();
 // Verifique se o usuário está logado, se não, redirecione-o para uma página de login
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
@@ -20,6 +21,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 <body>
     <?php
+       
         include("usuario_conectado.php");
         echo "<p>Bem vindo ".$informacoes_usuario['nome']."!</p>";
     ?>
@@ -37,19 +39,24 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <a href="tela_principal.html"><img src="img/im_sair.png" width="30px"></a> <p>SAIR</p>
 
         </div>
-
-        <input type="text" maxlength="50" size="50" placeholder="<?php echo $informacoes_usuario['cpf'];?>" id="cpf" class="estilo-info">
+        <form action="editar_usuario.php" method="POST" enctype="multipart/form-data">
+        <input type="text" name="usuario" maxlength="250" size="50" placeholder="<?php echo $informacoes_usuario['usuario'];?>" id="usuario"    class="estilo-info">
         <br><br>
 
-        <input type="text" maxlength="250" size="50" placeholder="<?php echo $informacoes_usuario['email'];?>" id="email"class="estilo-info">
+        <input type="text" name="email" maxlength="250" size="50" placeholder="<?php echo $informacoes_usuario['email'];?>" id="email"          class="estilo-info">
         <br><br>
 
-        <input type="text" maxlength="250" size="50" placeholder="<?php echo $informacoes_usuario['senha'];?>" id="senha"class="estilo-info">
+        <input type="text" name="senha" maxlength="250" size="50" placeholder="<?php echo $informacoes_usuario['senha'];?>" id="senha"          class="estilo-info">
         <br><br>
 
-        <input type="text" maxlength="250" size="50" placeholder="<?php echo $informacoes_usuario['telefone'];?>" id="telefone"class="estilo-info">
+        <input type="text" name="telefone" maxlength="11" size="50" placeholder="<?php echo $informacoes_usuario['telefone'];?>" id="telefone"  class="estilo-info">
         <br><br>
 
+        <input type="text" name="cpf" maxlength="11" size="50" placeholder="Insira o CPF para atualizar" id="cpf"  class="estilo-info">
+        <br><br>
+
+        <input type="submit" value="Atualizar" name="submit" id="atualizar">
+</form>
     </div>
 </body>
 

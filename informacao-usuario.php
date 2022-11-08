@@ -49,6 +49,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         <td> <?php echo $linha['telefone']; ?></td>
                         <td> <?php echo $linha['data1']; ?></td>
                     </tr>
+                    <td> <a href="excluir_usuario.php?cpf=<?php echo $linha['cpf'];?> ">
+                                <input type="button" value="Excluir">
+                            </a>
+                        </td>
             <?php }
             }
             ?>
