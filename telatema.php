@@ -87,9 +87,9 @@
                     include("lista_tema_produtos.php");
 
                     //verifica se a variável tem os valores da tabela.
-                    if (!empty($lista_temaF)) {
+                    if (!empty($lista_temaa)) {
                         //seleciona linha por linha.
-                        foreach ($lista_temaF as $linha) { ?>
+                        foreach ($lista_temaa as $linha) { ?>
                             <tr>
                                 <td> <?php echo '<img height="200px"src="' . $linha['foto_produto'] . '">'; ?> </td>
                             </tr>

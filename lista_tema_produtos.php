@@ -30,7 +30,7 @@
     if($comando->rowCount() >= 1)
     {
         //o fetch() transforma o retorno em uma matriz (Use quando você para um registro ou mais, ou seja, uma ou múltiplas linhas da tabela).
-        $lista_temaF = $comando->fetchAll();
+        $lista_temaa = $comando->fetchAll();
     }
     unset($comando);
     unset($pdo);
