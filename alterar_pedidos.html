@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="inserir_pedidos.css">
+</head>
+
+<body>
+    <div class="cima">
+        <a href="adm_principal.html"><img src="img/im_voltar.png" width="40px" id="voltar"></a>
+    </div>
+    <div class="tudo">
+        <div class="logo">
+            <img src="img/im_logo_azu.png" width="250px">
+        </div>
+        <form action="alterar_produto.php" method="POST" enctype="multipart/form-data">
+        
+
+        
+
+            <br><br>
+
+            <input type="text" maxlength="250" size="50" placeholder="Nome do Produto" id="nome_produto" name="nome_produto">
+            <br><br>
+
+            <input type="text" maxlength="250" size="50" placeholder="Preço do Produto" id="preco" name="preco_produto">
+            <br><br>
+
+            <input type="text" maxlength="250" size="50" placeholder="Tema do Produto" id="selecionar_tema" name="tema_produto">
+            <br><br>    
+
+            <input type="text" maxlength="250" size="50" placeholder="Descrição do Produto" id="desc" name="desc_produto">
+            <br><br>
+
+            <input type="text" maxlength="250" size="50" placeholder="Insira o ID do produto para alterar" id="id_pro" name="id_produto">
+            <br><br>
+
+            <input type="submit" value="Alterar o Produto" id="alterar_produto">
+    </div>
+    </form>
+    <div class="excluir">
+    <h2>Caso queira excluir, Insira o id do produto</h2>
+    <br>
+    <form action="excluir_pedido.php" method="post">
+
+        <input type="text" maxlength="250" size="50" placeholder="Insira o ID do produto para excluir" id="id_pro" name="id_produto">
+        <br><br>
+
+        <input type="submit" value="Excluir" id="alterar_produto">
+        <br>
+    </form>
+</div>
+</body>
+
+<script src="jquery-3.6.1.min.js"></script>
+</html>
