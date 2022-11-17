@@ -1,18 +1,22 @@
-* { margin: 0; padding: 0; }
-body,html
-{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
     background-color: rgba(244, 184, 94, 1);
-    display:flex;
-    flex-direction:column;  
+    display: flex;
+    flex-direction: column;
     margin: 0%;
 }
-.nav
-{
+
+.nav {
     width: 100%;
-    height:100px;
-    background-color:#3160B1;
+    height: 100px;
+    background-color: #3160B1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,52 +26,52 @@ body,html
 
 }
 
-.a
-{
+.a {
     text-decoration: none;
     display: flex;
-    flex-direction:row;
-    height:85px;
+    flex-direction: row;
+    height: 85px;
     margin-left: 0%;
     font-size: 200%;
     margin-left: 0%;
     align-items: center;
-    color:#F4B85E;
-  
+    color: #F4B85E;
+
 }
-.titulo1
-{
+
+.titulo1 {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     color: #2B5FBA;
-    
-    font-size: 200%; 
 
-   
+    font-size: 200%;
+
+
 }
-.img1
-{
-margin-top: 20px;
-display: flex;
-flex-direction:row; 
-margin-left: 20px;
-margin-right: 20px;
-}
-.titulo 
-{
+
+.img1 {
+    margin-top: 20px;
     display: flex;
-    flex-direction:column;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     color: #2B5FBA;
-    font-size: 200%; 
-   margin-top: 3%;
-  
+    font-size: 200%;
+    margin-top: 3%;
+
 }
-a{
+
+a {
     text-decoration: none;
-    color:#F4B85E;
+    color: #F4B85E;
 }
 
 .mainmenubtn {
@@ -75,22 +79,26 @@ a{
     color: white;
     border: none;
     cursor: pointer;
-    padding:20px;
+    padding: 10px;
     margin-top: 10px;
     margin-right: 100px;
 }
+
 .mainmenubtn:hover {
     background-color: #2B5FBA;
-    }
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 .dropdown-child {
     display: none;
     background-color: #2B5FBA;
     min-width: 150px;
 }
+
 .dropdown-child a {
     color: #F4B85E;
     padding: 20px;
@@ -98,11 +106,7 @@ a{
     text-decoration: none;
     display: block;
 }
+
 .dropdown:hover .dropdown-child {
     display: block;
 }
-
-.carousel {
-    width: 1000px;
-    margin: 0 auto;
-  }
